@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Secret Gallery</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: white;
+      color: #0b0b0b;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 30px 20px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    header h1 {
+      font-size: 28px;
+      margin-bottom: 10px;
+      color: #222;
+    }
+
+    header h2 {
+      font-size: 36px;
+      margin: 10px 0;
+      font-weight: bold;
+      color: #111;
+    }
+
+    header p {
+      font-size: 18px;
+      color: #555;
+      margin: 0;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 16px;
+    }
+
+    .card {
+      border: 1px solid #eee;
+      border-radius: 8px;
+      overflow: hidden;
+      background: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 8px;
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 6px;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 14px;
+      color: #777;
+    }
+
+    @media (max-width: 420px) {
+      .card img {
+        height: 140px;
+      }
+
+      header h2 {
+        font-size: 28px;
+      }
+
+      header h1, header p {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>The Prettiest Girl in the World</h1>
+      <h2>DANIELA ALLAYSA MURILLO</h2>
+      <p>Your secret admirer -L</p>
+    </header>
+
+    <section class="gallery">
+      <div class="card"><img src="photo1.jpg" alt="Photo 1"></div>
+      <div class="card"><img src="photo2.jpg" alt="Photo 2"></div>
+      <div class="card"><img src="photo3.jpg" alt="Photo 3"></div>
+      <div class="card"><img src="photo4.jpg" alt="Photo 4"></div>
+      <div class="card"><img src="photo5.jpg" alt="Photo 5"></div>
+      <div class="card"><img src="photo6.jpg" alt="Photo 6"></div>
+      <div class="card"><img src="photo7.jpg" alt="Photo 7"></div>
+      <div class="card"><img src="photo8.jpg" alt="Photo 8"></div>
+      <div class="card"><img src="photo9.jpg" alt="Photo 9"></div>
+    </section>
+
+    <footer>
+      Your secret admirer -L
+    </footer>
+  </div>
+</body>
+</html>
